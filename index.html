@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="alert alert-primary" style="text-align: center;">
+    <h1 class="alert alert-secondary">
+        Very Basic 
+        <span class="badge badge-secondary">
+            by rdh
+        </span>
+    </h1>
+     <!-- ? output for calculated results -->
+    <div class="alert alert-danger">
+        <h3 class="alert-heading" id="output">
+        </h3>
+    </div>
+    <!-- ? input for functions -->
+    <div class="alert alert-warning">
+        <input type="number" name="num1" id="num1">
+        <input type="number" name="num2" id="num2">
+    </div>
+    <div class="alert alert-success">
+
+        <button onclick="add()" 
+        role="button" aria-pressed="true"
+        class="btn btn-lg btn-dark"
+        > 
+            add
+            <span class="badge badge-pill badge-success"
+            onmouseover=""
+            >
+                +
+            </span>
+        </button>
+
+        <button onclick="sub()"
+        role="button" aria-pressed="true"
+        class="btn btn-lg btn-dark"> sub 
+        <span class="badge badge-pill badge-success"
+            onmouseover=""
+            >
+                -
+            </span>
+        </button>
+        <button onclick="mul()"
+        role="button" aria-pressed="true"
+        class="btn btn-lg btn-dark"> * </button>
+        <button onclick="div()"
+        role="button" aria-pressed="true"
+        class="btn btn-lg btn-dark"> / </button>
+        <button onclick="mod()"
+        role="button" aria-pressed="true"
+        class="btn btn-lg btn-dark"> % </button>
+        <button onclick="inc()"
+        role="button" aria-pressed="true"
+        class="btn btn-lg btn-dark"> ++ </button>
+        <button onclick="dec()"
+        role="button" aria-pressed="true"
+        class="btn btn-lg btn-dark"> -- </button>
+    </div>
+
+    <br>
+    <div>
+        <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click For HELP!!</button>
+
+    </div>
+<script src="basicCalc.js"></script>
+</body>
+</html>
